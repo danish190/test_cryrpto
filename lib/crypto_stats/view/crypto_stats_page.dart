@@ -129,6 +129,9 @@ class CryptoStatsPage extends StatelessWidget {
                   maxLine: 1,
                 ),
                 SizedBox(
+                  height: 20,
+                ),
+                SizedBox(
                   height: 200,
                   child: ListView.builder(
           
@@ -156,9 +159,15 @@ class CryptoStatsPage extends StatelessWidget {
                                     SizedBox(
                                       height: 50,
                                     ),
-                                    BigText(text: '47899.00'),
+                                    BigText(text: '47899.00',
+                                    color: Colors.black,
+                                      size: 20,
+                                      fontWeight: FontWeight.w800,
+                                    ),
                                     Spacer(),
-                                    BigText(text: 'SELL'),
+                                    BigText(text: 'SELL',
+                                      size: 13,
+                                    ),
           
           
                                   ],
@@ -187,7 +196,13 @@ class CryptoStatsPage extends StatelessWidget {
                             padding: EdgeInsets.symmetric(
                                 horizontal: 20, vertical: 10),
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(30),
+                              boxShadow: <BoxShadow>[
+                                BoxShadow(
+                                    color: Colors.black26,
+                                    offset: Offset(0.0, 0.75)
+                                )
+                              ],
+                              borderRadius: BorderRadius.circular(10),
                               color: cryptoAssetsContainerBackground,
                             ),
                             child: Row(
